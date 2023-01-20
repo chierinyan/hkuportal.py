@@ -48,7 +48,7 @@ class Enrollee:
 
         username_input = wait_and_find(self.driver, By.CSS_SELECTOR, '#username')
         password_input = wait_and_find(self.driver, By.CSS_SELECTOR, '#password')
-        submit = wait_and_find(self.driver, By.CSS_SELECTOR, 'input[type=image]')
+        submit = wait_and_find(self.driver, By.CSS_SELECTOR, '#login_btn')
 
         username_input.send_keys(USERNAME)
         password_input.send_keys(PASSWORD)
